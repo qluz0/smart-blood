@@ -1,0 +1,87 @@
+:root {
+  /* Type */
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+
+  /* Core palette: warm paper + ink, single crimson accent. No blue, no gradients. */
+  --paper: #f7f3ec;
+  --paper-raised: #fffdf9;
+  --ink: #221b17;
+  --ink-soft: #564c44;
+  --ink-faint: #8a7f74;
+  --line: #ddd3c4;
+  --line-strong: #221b17;
+
+  --blood: #a3101c;
+  --blood-dark: #7a0c15;
+  --blood-ink: #ffffff;
+  --blood-tint: #f6dfdf;
+
+  --ok: #2f6b3f;
+  --ok-tint: #e2ecdd;
+  --warn: #9a6a0a;
+  --warn-tint: #f3e6cb;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  --shadow-card: 4px 4px 0 var(--line-strong);
+  --shadow-card-sm: 2px 2px 0 var(--line-strong);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --container: 1200px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #15120f;
+    --paper-raised: #1d1915;
+    --ink: #f3ece2;
+    --ink-soft: #c9beb1;
+    --ink-faint: #8f8375;
+    --line: #38322a;
+    --line-strong: #f3ece2;
+
+    --blood: #e23c3c;
+    --blood-dark: #c22525;
+    --blood-ink: #15120f;
+    --blood-tint: #3a1a1a;
+
+    --ok: #7dbf8e;
+    --ok-tint: #1e2a1f;
+    --warn: #d9a441;
+    --warn-tint: #2e2515;
+
+    --shadow-card: 4px 4px 0 var(--line-strong);
+    --shadow-card-sm: 2px 2px 0 var(--line-strong);
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #15120f;
+  --paper-raised: #1d1915;
+  --ink: #f3ece2;
+  --ink-soft: #c9beb1;
+  --ink-faint: #8f8375;
+  --line: #38322a;
+  --line-strong: #f3ece2;
+
+  --blood: #e23c3c;
+  --blood-dark: #c22525;
+  --blood-ink: #15120f;
+  --blood-tint: #3a1a1a;
+
+  --ok: #7dbf8e;
+  --ok-tint: #1e2a1f;
+  --warn: #d9a441;
+  --warn-tint: #2e2515;
+}
